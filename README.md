@@ -1,7 +1,7 @@
 # Robotics Arm Control with Processing and Arduino
 ## Introduction:
 <div align="left">
-    Testo che si trova a sinistra
+    This repository aims to help you program a sketch that offers a 3D simulation of a robotic arm with a graphical user interface (GUI) for controlling its movements. Designed to communicate with an Arduino board using the serial communication protocol, the program will allow users to interactively manipulate the arm's servo motors through a visual interface. The GUI incorporates six sliders, each corresponding to a specific servo motor, enabling users to intuitively adjust angles and observe real-time changes in the 3D arm representation.
 </div>
 
 <div align="right">
