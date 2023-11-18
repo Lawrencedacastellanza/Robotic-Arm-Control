@@ -1,6 +1,13 @@
 # Robotic-Arm-Control
-In this repository, you will find all the necessary that you need to create a program with Processing and Arduino. In this repository there is:
-1. Arduino folder: it si the program 
+# Robotics Arm Control with Processing and Arduino
+
+This repository provides all the necessary resources for creating programs using Processing and Arduino to control a robotic arm. The repository includes the following folders:
+1. **Arduino**: Contains the Arduino program that is compatible with all the Processing programs in this repository.
+2. **Processing Mouse**: This folder contains a simple Processing program enabling an initial interaction with the connection between Processing, Arduino, and the robotic arm. The program allows you to control the arm's servos using the mouse wheel, employing relative angles.
+3. **Processing Slider**: Running the program in this folder displays an image of the 6-degree robotic arm with implemented knobs for each servo. This program aids in gaining familiarity with the knobs, facilitating control of the robotic arm using absolute angles.
+4. **Processing 3D**: This folder houses a more complex version of the program. It creates a 3D representation of the robotic arm in Processing, replicating the same movements as the physical robot connected to your Arduino Board.
+
+The following sections provide detailed information about each program.
 # Arduino ServoEasing Control
 
 This Arduino sketch allows you to control up to 6 servo motors with easing functions using the ServoEasing library. The code is designed to receive commands through the serial monitor to switch between servos, set absolute angles, and move servos in relative angles.
