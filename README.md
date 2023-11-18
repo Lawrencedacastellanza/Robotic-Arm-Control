@@ -1,5 +1,8 @@
 # Robotics Arm Control with Processing and Arduino
+## Introduction:
+![Alt Text](image_url) This repository aims to help you program a sketch that offers a 3D simulation of a robotic arm with a graphical user interface (GUI) for controlling its movements. Designed to communicate with an Arduino board using the serial communication protocol, the program will allow users to interactively manipulate the arm's servo motors through a visual interface. The GUI incorporates six sliders, each corresponding to a specific servo motor, enabling users to intuitively adjust angles and observe real-time changes in the 3D arm representation.
 
+## Structure
 This repository provides all the necessary resources for creating programs using Processing and Arduino to control a robotic arm. The repository includes the following folders:
 1. **Arduino**: Contains the Arduino program that is compatible with all the Processing programs in this repository.
 2. **Processing Mouse**: This folder contains a simple Processing program enabling an initial interaction with the connection between Processing, Arduino, and the robotic arm. The program allows you to control the arm's servos using the mouse wheel, employing relative angles.
@@ -10,7 +13,8 @@ The following sections provide detailed information about each program.
 ## General prerequisites
 - [Arduino IDE](https://www.arduino.cc/en/software) installed on your computer.
 - [Processing IDE](https://processing.org/download/) installed on your computer.
-- 6DoF Robotics arm: I have used this [one](https://www.amazon.it/Taidda-Manipolatore-Industriale-insegnamento-Universitario/dp/B084FSVQYC/ref=asc_df_B084FSVQYC/?tag=googshopit-21&linkCode=df0&hvadid=459268327566&hvpos=&hvnetw=g&hvrand=11317279051347235925&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=20569&hvtargid=pla-1001227747582&psc=1&mcid=f9a52a06b82c34429ae7a00b076da8ab) but I have to say that I have found a lot of problem with the servos. I suggest you to by a more expensive one that will last longer and will have a better construction quality. 
+- 6DoF Robotics arm: I have used this [one](https://www.amazon.it/Taidda-Manipolatore-Industriale-insegnamento-Universitario/dp/B084FSVQYC/ref=asc_df_B084FSVQYC/?tag=googshopit-21&linkCode=df0&hvadid=459268327566&hvpos=&hvnetw=g&hvrand=11317279051347235925&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=20569&hvtargid=pla-1001227747582&psc=1&mcid=f9a52a06b82c34429ae7a00b076da8ab) but I have to say that I have found a lot of problem with the servos. I suggest you to by a more expensive one that will last longer and will have a better construction quality.
+
 # 1. Arduino ServoEasing Control
 
 This Arduino sketch allows you to control up to 6 servo motors with easing functions using the ServoEasing library. The code is designed to receive commands through the serial monitor to switch between servos, set absolute angles, and move servos in relative angles.
@@ -140,7 +144,7 @@ The draw function is executed in an infinite loop and sets the background color 
 The controlEvent function is triggered every time a slider is moved. It sends the servo number and angle to the Arduino board via serial communication.
 
 # 4. Processing 3D 
-
+I suggest you, to use the knowledge developed in previous programs to try to create a 3D representation of the robotic arm and set up all. you can later look at this solution to understand all the tricks I used. Make attention on
 ### Prerequisites
 
 - Arduino board connected to your computer.
@@ -161,7 +165,7 @@ The controlEvent function is triggered every time a slider is moved. It sends th
 ## Code Overview
 
 ### GUI Setup
-The setup function initializes the sketch, loads a logo image, sets up a 3D screen, and initializes the ControlP5 GUI object. It also creates six round sliders for each servo.
+The setup function colouralizes the sketch, loads a logo image, sets up a 3D screen, and initializes the ControlP5 GUI object. It also creates six round sliders for each servo.
 
 ### Draw Function
 The draw function is executed in an infinite loop and sets up the 3D environment. It creates the various parts of the robotic arm and updates their positions based on the slider values.
