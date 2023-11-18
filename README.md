@@ -139,34 +139,38 @@ This Processing sketch enables graphical control of a robotic arm using sliders.
 The setup function initializes the sketch, creates a window with a fixed size, and loads a background image. It also initializes the ControlP5 GUI object and creates six round sliders for each servo.
 
 ### Draw Function
-The draw function is executed in an infinite loop and sets the background color to white while displaying the background image.
+The draw function is executed in an infinite loop and sets the background colour to white while displaying the background image.
 
 ### ControlEvent Function
 The controlEvent function is triggered every time a slider is moved. It sends the servo number and angle to the Arduino board via serial communication.
 
 # 4. Processing 3D 
-I suggest you, to use the knowledge developed in previous programs to try to create a 3D representation of the robotic arm and set up all. you can later look at this solution to understand all the tricks I used. Make attention on
+I suggest you to use the knowledge developed in previous programs to try to create a 3D representation of the robotic arm and set up all. you can later look at this solution to understand all the tricks I used. When you look at my code focus on lights of the 3D drawn, translations and rotations
 ### Prerequisites
 
 - Arduino board connected to your computer.
 - [ControlP5 Processing Library](http://www.sojamo.de/libraries/controlP5/)
 
-### Instructions
-
-1. Install the Processing IDE if not already installed.
-
-2. Connect your Arduino board to your computer.
-
-3. Install the ControlP5 library. You can download it [here](http://www.sojamo.de/libraries/controlP5/). Follow the installation instructions on the website.
-
-4. Open the Processing sketch.
-
-5. Run the sketch.
+Follow the same instructions of the previous chapter.
 
 ## Code Overview
+## Important Processing functions
+    ```cpp
+    size(1000,800,P3D); // Create a 3D screen
+    noStroke();
+    rectMode(CENTER); // Modifies the location from which rectangles are drawn
+    
+    lights(); 
+    \\Sets the default ambient and directional light
 
+    ambientLight(255,0,0,0,0,255);
+    \\Sets a light that doesn't come from a specific direction light (R,G,B,x,y,z)
+
+    pointLight(255,0,0,width/2,height/2,400);
+    \\Adds a point light.
+    ```
 ### GUI Setup
-The setup function colouralizes the sketch, loads a logo image, sets up a 3D screen, and initializes the ControlP5 GUI object. It also creates six round sliders for each servo.
+The setup function colourizes the sketch, loads a logo image, sets up a 3D screen, and initializes the ControlP5 GUI object. It also creates six round sliders for each servo.
 
 ### Draw Function
 The draw function is executed in an infinite loop and sets up the 3D environment. It creates the various parts of the robotic arm and updates their positions based on the slider values.
