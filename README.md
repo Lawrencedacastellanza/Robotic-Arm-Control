@@ -139,7 +139,7 @@ The draw function is executed in an infinite loop and sets the background color 
 ### ControlEvent Function
 The controlEvent function is triggered every time a slider is moved. It sends the servo number and angle to the Arduino board via serial communication.
 
-# 3. 3D building 
+# 4. Processing 3D 
 
 ### Prerequisites
 
