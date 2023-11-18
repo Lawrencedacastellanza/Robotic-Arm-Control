@@ -1,5 +1,6 @@
 # Robotic-Arm-Control
-
+In this repository, you will find all the necessary that you need to create a program with Processing and Arduino. In this repository there is:
+1. Arduino folder: it si the program 
 # Arduino ServoEasing Control
 
 This Arduino sketch allows you to control up to 6 servo motors with easing functions using the ServoEasing library. The code is designed to receive commands through the serial monitor to switch between servos, set absolute angles, and move servos in relative angles.
@@ -7,7 +8,7 @@ This Arduino sketch allows you to control up to 6 servo motors with easing funct
 ## Prerequisites
 
 - Arduino IDE installed on your computer.
-- ServoEasing library installed. You can find it [here](https://github.com/arghilabs/ServoEasing).
+- ServoEasing library installed. You can find it [here](https://www.arduino.cc/reference/en/libraries/servoeasing/).
 
 ## Configuration
 
