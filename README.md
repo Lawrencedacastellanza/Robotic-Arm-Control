@@ -83,9 +83,6 @@ This Processing sketch allows you to control a robotic arm using the mouse and k
 ### Prerequisites
 
 - Arduino board connected to your computer.
-
-### Dependencies
-
 - [Processing Serial Library](https://processing.org/reference/libraries/serial/index.html)
 
 ### Instructions
