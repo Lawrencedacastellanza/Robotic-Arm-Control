@@ -14,6 +14,15 @@ This repository provides all the necessary resources for creating programs using
 4. **Processing 3D**: This folder houses a more complex version of the program. It creates a 3D representation of the robotic arm in Processing, replicating the same movements as the physical robot connected to your Arduino Board.
 
 The following sections provide detailed information about each program.
+## Getting Started
+
+### Installation
+
+ **Clone the Repository:**
+   ```bash
+   git clone https://github.com/Lawrencedacastellanza/Robotic-Arm-Control.git
+   ```
+
 ## General prerequisites
 - [Arduino IDE](https://www.arduino.cc/en/software) installed on your computer.
 - [Processing IDE](https://processing.org/download/) installed on your computer.
