@@ -70,12 +70,6 @@ This Arduino sketch allows you to control up to 6 servo motors with easing funct
 - `a`: Set absolute angle for the selected servo.
 - `r`: Move the selected servo in a relative angle.
 
-## Example
-
-1. To switch to Servo 3: Send `k3`.
-2. To set Servo 1 to angle 45 degrees: Send `a45`.
-3. To move Servo 2 by +10 degrees: Send `r10`.
-
 # 2. Processing Mouse
 
 This Processing sketch allows you to control a robotic arm using the mouse and keyboard. It communicates with an Arduino board using the serial communication protocol.
