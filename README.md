@@ -113,7 +113,7 @@ The mouseWheel function is called when the mouse wheel is scrolled. It sends the
 ### Keyboard Interaction
 The keyPressed function is called when a key is pressed. It sends the key value to the Arduino if it is a valid input.
 
-# 3. Processing Mouse
+# 3. Processing Slider
 
 This Processing sketch enables graphical control of a robotic arm using sliders. The program communicates with an Arduino board via the serial communication protocol.
 
