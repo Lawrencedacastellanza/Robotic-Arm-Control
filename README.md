@@ -1,4 +1,4 @@
-<img src="result.PNG" align="right" width="600" />
+<img src="result.PNG" align="right" width="500" />
 
 # Robotics Arm Control with Processing and Arduino
 ## Introduction:
