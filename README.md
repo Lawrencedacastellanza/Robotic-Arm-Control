@@ -7,6 +7,9 @@ This repository provides all the necessary resources for creating programs using
 4. **Processing 3D**: This folder houses a more complex version of the program. It creates a 3D representation of the robotic arm in Processing, replicating the same movements as the physical robot connected to your Arduino Board.
 
 The following sections provide detailed information about each program.
+## General prerequisites
+- Arduino IDE installed on your computer.
+- 6DoF Robotics arm: I have used this [one](https://www.amazon.it/Taidda-Manipolatore-Industriale-insegnamento-Universitario/dp/B084FSVQYC/ref=asc_df_B084FSVQYC/?tag=googshopit-21&linkCode=df0&hvadid=459268327566&hvpos=&hvnetw=g&hvrand=11317279051347235925&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=20569&hvtargid=pla-1001227747582&psc=1&mcid=f9a52a06b82c34429ae7a00b076da8ab) but I have to say that I have found a lot of problem with the servos. I suggest you to by a more expensive one that will last longer and will have a better construction quality. 
 # Arduino ServoEasing Control
 
 This Arduino sketch allows you to control up to 6 servo motors with easing functions using the ServoEasing library. The code is designed to receive commands through the serial monitor to switch between servos, set absolute angles, and move servos in relative angles.
