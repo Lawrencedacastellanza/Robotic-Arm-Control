@@ -73,3 +73,103 @@ This Arduino sketch allows you to control up to 6 servo motors with easing funct
 3. To move Servo 2 by +10 degrees: Send `r10`.
 
 Feel free to modify the code to suit your specific requirements.
+
+# 2. Processing Mouse
+
+This Processing sketch allows you to control a robotic arm using the mouse and keyboard. It communicates with an Arduino board using the serial communication protocol.
+
+## Setup
+
+### Prerequisites
+
+- Arduino board connected to your computer.
+
+### Dependencies
+
+- [Processing Serial Library](https://processing.org/reference/libraries/serial/index.html)
+
+### Instructions
+
+1. Install the Processing IDE if not already installed.
+
+2. Connect your Arduino board to your computer.
+
+3. Open the Processing sketch.
+
+4. Run the sketch.
+
+## Code Overview
+### Setup Function
+The setup function initializes the sketch, creates a new window, sets its size, and establishes communication with the Arduino.
+
+### Mouse Wheel Interaction
+The mouseWheel function is called when the mouse wheel is scrolled. It sends the scroll direction to the Arduino.
+
+### Keyboard Interaction
+The keyPressed function is called when a key is pressed. It sends the key value to the Arduino if it is a valid input.
+
+# 3. Processing Mouse
+
+This Processing sketch enables graphical control of a robotic arm using sliders. The program communicates with an Arduino board via the serial communication protocol.
+
+## Setup
+
+### Prerequisites
+
+- Arduino board connected to your computer.
+- [ControlP5 Processing Library](http://www.sojamo.de/libraries/controlP5/)
+
+### Instructions
+
+1. Install the Processing IDE if not already installed.
+
+2. Connect your Arduino board to your computer.
+
+3. Install the ControlP5 library. You can download it [here](http://www.sojamo.de/libraries/controlP5/). Follow the installation instructions on the website.
+
+4. Open the Processing sketch.
+
+5. Run the sketch.
+
+## Code Overview
+
+### GUI Setup
+The setup function initializes the sketch, creates a window with a fixed size, and loads a background image. It also initializes the ControlP5 GUI object and creates six round sliders for each servo.
+
+### Draw Function
+The draw function is executed in an infinite loop and sets the background color to white while displaying the background image.
+
+### ControlEvent Function
+The controlEvent function is triggered every time a slider is moved. It sends the servo number and angle to the Arduino board via serial communication.
+
+# 3. 3D building 
+
+### Prerequisites
+
+- Arduino board connected to your computer.
+- [ControlP5 Processing Library](http://www.sojamo.de/libraries/controlP5/)
+
+### Instructions
+
+1. Install the Processing IDE if not already installed.
+
+2. Connect your Arduino board to your computer.
+
+3. Install the ControlP5 library. You can download it [here](http://www.sojamo.de/libraries/controlP5/). Follow the installation instructions on the website.
+
+4. Open the Processing sketch.
+
+5. Run the sketch.
+
+## Code Overview
+
+### GUI Setup
+The setup function initializes the sketch, loads a logo image, sets up a 3D screen, and initializes the ControlP5 GUI object. It also creates six round sliders for each servo.
+
+### Draw Function
+The draw function is executed in an infinite loop and sets up the 3D environment. It creates the various parts of the robotic arm and updates their positions based on the slider values.
+
+### ControlEvent Function
+The controlEvent function is triggered every time a slider is moved. It sends the servo number and angle to the Arduino board via serial communication.
+
+Feel free to modify the code and customize it according to your robotic arm setup.
