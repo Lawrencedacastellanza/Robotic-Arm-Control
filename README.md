@@ -42,7 +42,6 @@ This Arduino sketch allows you to control up to 6 servo motors with easing funct
 
     ```cpp
     #define ENABLE_EASE_QUADRATIC
-    // Uncomment others as needed
     ```
 
 3. **Initial Setup**: Set the maximum number of servo objects and other parameters.
@@ -76,8 +75,6 @@ This Arduino sketch allows you to control up to 6 servo motors with easing funct
 1. To switch to Servo 3: Send `k3`.
 2. To set Servo 1 to angle 45 degrees: Send `a45`.
 3. To move Servo 2 by +10 degrees: Send `r10`.
-
-Feel free to modify the code to suit your specific requirements.
 
 # 2. Processing Mouse
 
