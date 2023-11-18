@@ -1,4 +1,3 @@
-# Robotic-Arm-Control
 # Robotics Arm Control with Processing and Arduino
 
 This repository provides all the necessary resources for creating programs using Processing and Arduino to control a robotic arm. The repository includes the following folders:
